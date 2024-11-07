@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    
+    font-family: 'Outfit';
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+}
+
+.main-page{
+    display: grid;
+    place-items: center;
+    margin: 100px 0;
+}
+
+.container-recipe{
+    width: 48%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+picture{
+    display: block;
+}
+
+h1{
+    font-family: 'Young Serif';
+}
+
+
+h2{
+    font-size: 20px;
+    font-family: 'Young Serif';
+    font-weight: 500;
+    color: hsl(14, 45%, 36%);
+}
+h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+}
+ul{
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 24px;
+}
+
+li{
+    margin-bottom: 8px;
+    padding-left: 16px;
+}
+
+li:nth-last-of-type(li){
+    margin-bottom: 0px;
+}
+
+li span{
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+
+
+section{
+    border: 0;
+    border-bottom: 0.5px;
+    border-color: #E1E1E1;
+    border-style: solid;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+section:nth-last-of-type(1) {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.img-omelette{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+
+.preparation{
+    /* background-color: hsl(332, 51%, 32%); */
+    background-color: hsl(330, 100%, 98%);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap:16px
+}
+
+
+.ingredients{
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+
+ol{
+    padding-left: 24px;
+}
+
+ol li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+
+table{
+    border-collapse: collapse;
+}
+
+tr{
+    border-bottom: 1px solid #E1E1E1;
+}
+
+tr:nth-last-of-type(1) {
+    border-bottom: 0;
+}
+
+
+td{
+    font-size: 14px;
+    padding: 8px 24px;
+}
+
+td span {
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+
+
+@media( max-width: 1450px ){
+    .container-recipe{
+        width: 58%;
+        transition: 0.5s;
+    }
+}
+
+@media( max-width: 720px ){
+    .container-recipe{
+        width: 78%;
+        transition: 0.5s;
+    }
+}
+@media( max-width: 375px ){
+    .container-recipe{
+        width: 88%;
+        transition: 0.5s;
+    }
+}
